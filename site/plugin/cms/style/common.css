@@ -1,0 +1,214 @@
+@import "reset.css";
+
+div#container {
+    min-width: 768px;
+    min-height: 70%;
+}
+header {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    color: #FFF;
+    background-color: #000;
+}
+nav {
+    display: block;
+    float: left;
+    width: 20%;
+    height: 100%;
+}
+div#main {
+    min-height: 70%;
+}
+div#main:after { display:block; clear:both; content:""; visibility:hidden; height:0;}
+div#content {
+    display: block;
+    float: left;
+    padding: 1%;
+    width: 78%;
+    height: 100%;
+    min-height: 515px;
+	background:#f0f0f0;
+}
+div#siteMap {
+    display: block;
+    height: 45px;
+    text-align: center;
+    background-color: #BBBBBB;
+}
+div#siteMap ul{
+	line-height:45px;}
+div#siteMap ul li a{
+	font-size:12px;
+	color:#333;}
+div#copyright {
+    text-align: center;
+	margin:5px;
+	font-size:12px;
+	color:#999;
+}
+
+/* header */
+div#company {
+    float: left;
+    height: 60px;
+}
+div#company .title {
+    font-family: "隶书",monospace;
+    font-size: 24px;
+}
+div#company .copyright{
+    font-family: "隶书",monospace;
+    font-size: 18px;
+}
+div#logo {
+    position: absolute;
+    left: 20%;
+    top: 0;
+}
+div#userControl {
+    float: right;
+}
+div#userControl ul.button li {
+    content: "][";
+    display: inline-block;
+}
+div#userControl ul.button li:before {
+    content: "[";
+}
+div#userControl ul.button li:after {
+    content: "]";
+}
+/* header具体样式 */
+header div#company .title{
+	width:137px;
+	height:60px;
+	margin:10px;
+	background:url(images/logo.png) no-repeat;}
+header div#company .title span{
+	 display:none;}
+div#logo {
+    font: 32px/60px "微软雅黑";
+    color: #0fc;
+}
+header div#userControl{
+	margin:10px;
+	font-size:13px;
+	line-height:18px;}
+header div#userControl .button{
+	color:#999;}
+header div#userControl .button a{
+	color:#FFF;}
+	
+/* 菜单栏 */
+nav {
+	min-height:542px;
+    background:url(images/nav_bg.png) repeat-y;
+    background-size: 100%;
+}
+nav .menuItem {
+	/*padding:0 60px;*/
+	border-bottom:thin solid #CCC;
+}
+nav .menuItem a{
+    display: block;
+    padding-left: 60px;
+    width: 100%;
+    height: 50px;
+	font-family:"微软雅黑", "华文细黑", "幼圆";
+    line-height: 50px;
+	color:#666;}
+nav .menuItem a img{
+    vertical-align: middle;
+    height: 60%;
+	margin:0 20px 0 0;
+}
+nav .menuItem a:hover{
+	background:url(images/nav_hover_bg.png) repeat-x;
+}
+nav h2{
+	padding:40px 0 20px 60px;
+	color:#333;
+	font-size:18px;
+    font-family: "微软雅黑";
+	font-weight:400;
+	border-bottom:thin solid #CCC;}
+	
+/*主要内容*/
+div#content div.contentTitle{
+	background:#39C;
+    margin-bottom: 6px;
+}
+div#content h2 {
+	display:block;
+	float:left;
+	margin-left:20px;
+	padding-left:30px;
+    padding-right:30px;
+	font-family:"微软雅黑", "华文细黑", "幼圆";
+	font-weight:400;
+	font-size:16px;
+	line-height:36px;
+	background-color:#175a9a;
+	color:#FFF;
+}
+div#content span a{
+	color:#333;}
+div#content div.contentTitle span a+a:before {
+    content: "> ";
+}
+div#content div.contentTitle span{
+	font-size:12px;
+	padding-left:14px;
+	margin-left:10px;
+	line-height:36px;
+	background: url(images/location.png) no-repeat;
+}
+div#contentControl{
+    margin-bottom: 6px;
+    padding: 3px;
+    border:thin solid #e0e0e0;
+    background-color:#e6e6e6;
+}
+/* 按钮样式 */
+a.control.button{
+    display: inline-block;
+    margin:3px;
+    padding: 4px;
+    font: 15px/40px "微软雅黑";
+    color: #0b4a88;
+    border:1px solid #e6e6e6;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+a.control.button {
+    text-decoration: none;
+    color: #0b4a88;
+}
+a.control.button:hover{
+    border:1px solid #b5b5b5;
+    border-radius:5px;
+}
+a.control.button img{
+    vertical-align: middle;
+    margin-right: 3px;
+    height: 40px;
+    width: auto;
+}
+
+/*站点导航*/
+div#siteMap ul li {
+    display: inline-block;
+}
+div#siteMap ul li:after {
+    content: '|';
+}
+div#siteMap ul li:last-child:after {
+    content: '';
+}
+
+/*copyright*/
+div#copyright {
+
+}
+

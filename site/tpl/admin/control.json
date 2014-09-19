@@ -1,0 +1,21 @@
+{
+    "title":"控制菜单",
+    "item":{
+        "add":{
+            "icon":1,
+            "name":"添加消息",
+            "absolute":null,
+            "url":null,
+            "set":null,
+            "page":"cms",
+            "action":"add",
+            "qus":null
+        },
+        "modify":{
+            "icon":2,
+            "name":"修改消息",
+            "page":"cms",
+            "action":"modify"
+        }
+    }
+}

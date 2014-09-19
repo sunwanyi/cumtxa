@@ -1,0 +1,116 @@
+div#data {
+}
+	
+#dataTable {
+    width: 100%;
+	background:#FFF;
+
+}
+th{
+	font-weight:400;}
+thead tr th,tfoot tr th{
+	font-weight:bold;}
+#dataTable tr{
+    width: 20px;
+	height:25px;
+	border:thin solid #CCC;
+	color: #333;
+}
+#dataTable tbody tr{
+	font-size:0.85em;
+	line-height:2em;
+	color:#666;}
+#dataTable tbody tr:nth-child(even) {
+	background: #FFF;
+}
+#dataTable tbody tr:nth-child(odd) {
+	background: #E7F1F1;
+}
+#dataPage tr:nth-child(even) {
+	background:#CCF;
+}
+#dataTable th, #dataTable td{
+	text-align: center;
+	border:thin solid #CCC;
+}
+#dataTable thead {
+	border:thin solid #CCC;
+    background-color: #d5d5d5;
+    color: #333;
+}
+
+#dataPage ul li {
+	font-size:14px;
+    display: inline-block;
+	color:#666;
+}
+#dataPage ul li a {
+    color: #003;
+}
+#dataPage {
+	margin:10px 0;
+    height: 25px;
+    line-height: 25px;
+}
+#dataPage .page{
+	border:thin solid #A2BBD7;
+	background:#D2E7F0;
+	}
+#dataPage .page a{
+	display:block;
+	text-align:center;
+	width:25px;
+	height:25px;}
+#dataPage ul li a:hover{
+	text-decoration:underline;}
+ #dataPage .page a:hover{
+    color:white;
+    background-color: #A2BBD7;
+}
+fieldset label{
+	font-family: "微软雅黑";font-size:16px;
+	color: #650000;
+}
+fieldset select{
+	height:28px;
+	width: 360px;
+	display:block;
+	margin: 6px 0;
+	line-height:28px;
+	font-family: "微软雅黑";font-size:14px;color: #333;
+
+	cursor:pointer;
+	white-space:nowrap;text-overflow:ellipsis;overflow:hidden;
+	position:relative;
+	z-index:99;
+
+	-webkit-appearance: none;/*去掉自带的样式*/
+	-webkit-padding-start: 8px;
+	background-image: url("images/ico.gif"), -webkit-linear-gradient(top, #f7f7f7, #efefef);
+	background-repeat: no-repeat;
+	background-position: center right;
+	-webkit-background-origin: content-box,border-box;
+	 padding-right: 12px;
+	border: 1px solid #999;
+	border-radius: 4px;
+	outline: none;
+	box-shadow: 0px 1px 1px rgba(0,0,0,0.21);}
+
+fieldset input[type="text"]{
+	height:25px;
+	width: 260px;
+	margin:6px 0;
+	padding:0 5px;
+	border: 1px solid #878787;
+	border-radius: 4px;
+	box-shadow: 0px 1px 1px rgba(0,0,0,0.21);
+
+	font-family: "微软雅黑";font-size:14px;}
+fieldset input[type="submit"]{
+	padding: 5px 15px;
+	outline: none;
+	border: none;
+	border-radius: 4px;
+	background: url(images/select_bg.png) repeat-x;
+	color: #fff;
+}

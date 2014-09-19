@@ -1,0 +1,14 @@
+RewriteEngine On
+RewriteBase /cumtxa/
+
+RewriteRule ^site/(.*)/$ version.key [R=404,L]
+
+# 对图片等其他资源url改写，图片等资源全部放到site/resource
+RewriteCond %{REQUEST_URI} ^.*(\.html|.xml|\.css|\.js|\.gif|\.png|\.jpg|\.swf|\.jpeg|\.doc|\.rar|\.ico)$
+RewriteRule ^site/(.*)$ site/$1 [L]
+RewriteCond %{REQUEST_URI} ^.*(\.html|.xml|\.css|\.js|\.gif|\.png|\.jpg|\.swf|\.jpeg|\.doc|\.rar|\.ico)$
+RewriteRule ^(.*)$ site/$1 [L]
+
+# 对php文件脚本改写
+RewriteCond %{REQUEST_URI} !^.*(\.html|.xml|\.css|\.js|\.gif|\.png|\.jpg|\.swf|\.jpeg|\.doc|\.rar|\.ico)$
+RewriteRule ^.*$ index.php [L]
