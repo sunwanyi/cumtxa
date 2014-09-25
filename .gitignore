@@ -1,0 +1,22 @@
+﻿#code manager file
+.git/
+.svn/
+
+# generated files
+/cache/
+
+# running files
+/log/*.log
+
+# Local configuration file (sdk path, etc)
+local.properties
+
+# Eclipse project files
+.classpath
+.project
+.idea/
+.settings/
+.buildpath
+
+# user local file
+likyhPHP*.zip
